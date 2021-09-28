@@ -1,0 +1,23 @@
+{
+  "name": "greensgo-v2",
+  "version": "2.0.0",
+  "description": "A working server and API with a NodeMCU 12-E",
+  "main": "app.js",
+  "scripts": {
+    "devTest": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Arduino"
+  ],
+  "author": "GreensGo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "nodemailer": "^6.6.3",
+    "ws": "^7.5.0"
+  }
+}
