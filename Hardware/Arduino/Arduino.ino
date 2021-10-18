@@ -89,7 +89,9 @@ void loop() {
     Serial.println("Turning on fans")
   }
   else{
+    //if (Fans_Pin == HIGH) 
     Serial.println("Turning off fans")
+
   }
 
   if (lightVal <= 100)
