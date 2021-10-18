@@ -81,5 +81,25 @@ void loop() {
     digitalWrite(RELAY_PIN, LOW);
   }
   
+  //--------------------------------------------------------------------------
+  //Code based simulations (Hardware we could not afford)
+
+  if (temp >= 30)
+  {
+    Serial.println("Turning on fans")
+  }
+  else{
+    Serial.println("Turning off fans")
+  }
+
+  if (lightVal <= 100)
+  {
+    Serial.println("Going Dark: Swithing on lights for nightime development")
+  }
+  else{
+    Serial.println("Sun is shining: Swithing to free light power --> Sun active")
+  }
+  //--------------------------------------------------------------------------
+
   delay(5000);
 }

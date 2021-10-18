@@ -73,7 +73,7 @@ s.on('connection', function (ws, req) {
             let moisPer = Math.round(((mois*100)/780))
 
             // V measuremnets from Arduino (Light Meter)
-            // 0 => Dry as can be
+            // 0 => Night
             // -+ 50-200 => Indoor light
             // -+ 300-450 => Outside Shade light
             // -+ 800-960 => Outside Sun light
