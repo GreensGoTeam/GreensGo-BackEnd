@@ -42,8 +42,6 @@ const transporter = nodemailer.createTransport({
         user:   'greensgomail@gmail.com',
         pass:   process.env.PASSWORD
     }
-
-    //Fix this to be invisible
 })
 
 
@@ -55,8 +53,6 @@ s.on('connection', function (ws, req) {
 
     ws.on('message', function (message) {
         
-        //console.log("Received: " + message);
-
             let rawData = message.split(',');
             let temp = rawData[0];
             let humi = rawData[1];
@@ -97,7 +93,7 @@ s.on('connection', function (ws, req) {
             var ticker = new Date(Date.now())
             let _time = ticker.getHours() + ":" + ticker.getMinutes() + ":" + ticker.getSeconds();
 
-            // condition == 6pm fix date part to only check for 6 pm
+            // condition == 6pm
             if (_time == '18:00:00') {
 
                 const mailOptions = {
