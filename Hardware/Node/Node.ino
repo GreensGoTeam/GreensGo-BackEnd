@@ -81,18 +81,6 @@ void loop()
   humi = data["humi"];
   mois = data["mois"];
   lightVal = data["light"];
-
-  //Display data in serial to test we remove this later 
-  //"Debugging uncomment this"
-
-  // Serial.print(temp);
-  // Serial.print(",");
-  // Serial.print(humi);
-  // Serial.print(",");
-  // Serial.print(mois);
-  // Serial.print(",");
-  // Serial.print(lightVal);
-  // Serial.println();
   
   //--------------------------------------------
 
